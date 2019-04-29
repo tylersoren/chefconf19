@@ -2,9 +2,12 @@ all:
 	kube-create
 	sleep 5
 	kube-unit
-	
+
+kube-console:
+	kubectl exec -it cheftest -- sh -c '/bin/bash'
+
 docker-build:
-	docker build -t cheflocal:latest ./docker/Dockerfile
+	docker build -t cheflocal:latest ./docker
 
 kube-create:
 	kubectl apply -f ./kubernetes/local.yml

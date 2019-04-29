@@ -6,7 +6,8 @@ spec:
   volumes:
   - name: cookbook
     hostPath:
-      path: /host_mnt/c/GitRepos/chefconf/cookbooks/chefconf
+      # enter the local cookbook path to mount
+      path: /host_mnt/c/GitRepos/chefconf19/cookbooks/chefconf
       type: Directory
   containers:
   - name: cheflocal
