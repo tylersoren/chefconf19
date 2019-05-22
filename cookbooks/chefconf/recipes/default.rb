@@ -4,6 +4,6 @@
 #
 # Copyright:: 2019, The Authors, All Rights Reserved.
 
-directory 'C:\\test' do
+directory 'C:\\application' do
   action :create
 end
